@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
-* 'main' - A program that puts a sentence on screen.
-* 'return': (0) exit program success.
+*  main - A program that prints a sentence with put function
+*  Return: 0 (Success)
 */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
