@@ -4,7 +4,7 @@
 /**
  * main - A Program that checks if n is posititive print n is positive
  * if n is negative print n is negative
- * else print n is zero 
+ * else print n is zero
  * Return: 0 (Success)
  */
 int main(void)
