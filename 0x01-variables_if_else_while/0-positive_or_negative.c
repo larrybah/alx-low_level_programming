@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - A Program that checks if a number is positive or negative or zero
+ * main - A Program that checks if n is posititive print n is positive
+ * if n is negative print n is negative
+ * else print n is zero 
  * Return: 0 (Success)
  */
 int main(void)
@@ -14,13 +16,13 @@ if (n > 0)
 {
 printf("%d is Positive\n", n);
 }
-else if (n > 0)
+else if (n < 0)
 {
 printf("%d is negative\n", n);
 }
 else
 {
-printf("%n is zero\n", n);
+printf("%d is zero\n", n);
 }
 return (0);
 }
