@@ -12,5 +12,4 @@ _putchar(c);
 c++;
 }
 _putchar('\n');
-return (0);
 }
