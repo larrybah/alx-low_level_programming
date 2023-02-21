@@ -9,7 +9,7 @@ char c = 'a';
 while (c <= 'z')
 {
 _putchar(c);
-c*10;
+c * 10;
 }
 _putchar('\n');
 }
