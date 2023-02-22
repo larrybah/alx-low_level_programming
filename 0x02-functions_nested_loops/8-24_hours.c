@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *
- *
+ * jack_bauer - print the time
+ * Return: (void)
  */
 void jack_bauer(void)
 {
