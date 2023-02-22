@@ -1,18 +1,19 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * main - A program that checks if character is lower
+ * _islower - A program that checks if character is lower
+ * @c check if 'c' is lower
  * Return: 0 (Success)
  */
 int _islower(int c)
 {
 char = c;
-if (islower(c))
+if (islower('c'))
 {
-	_putchar('1');
+_putchar('1');
 }
-else 
+else
 {
-	_putchar('0');
+_putchar('0');
 }
 }
