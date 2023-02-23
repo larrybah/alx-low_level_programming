@@ -11,4 +11,5 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 #include <ctype.h>
+#include <stdio.h>
 #endif /* MAIN_H */
