@@ -1,0 +1,22 @@
+#include "main.h"
+/**
+ * _isupper - print 1 is character is uppercase
+ * @c: character c
+ * Return: 1 (Success)
+ */
+int _isupper(int c)
+{
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		if (isupper(c))
+		{
+			return (1);
+		}
+		else
+		{
+			return (0);
+		}
+	}
+}
