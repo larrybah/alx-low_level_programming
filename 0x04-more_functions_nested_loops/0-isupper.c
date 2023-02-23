@@ -6,17 +6,12 @@
  */
 int _isupper(int c)
 {
-	char c = 'a';
-
-	while (c <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
-		if (isupper(c))
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
+		return (1);
+	}
+	else
+	{
+		return(0);
 	}
 }
