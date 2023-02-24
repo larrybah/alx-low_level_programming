@@ -10,7 +10,6 @@ int i;
 while (i >= 0 && i <= 9)
 {
 _putchar(i);
-i++;
 }
 _putchar('\n');
 return (0);
