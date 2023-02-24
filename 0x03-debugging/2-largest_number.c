@@ -19,5 +19,7 @@ else if (b >= a && a >= c)
 return (b);
 }
 else
+{
 return (c);
+}
 }
