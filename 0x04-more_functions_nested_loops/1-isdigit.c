@@ -8,7 +8,7 @@ int _isdigit(int c)
 {
 	while (c >= 0 && c <= 9)
 	{
-		if (c == true)
+		if (c)
 		{
 			return (1);
 		}
