@@ -6,9 +6,9 @@
  */
 void reset_to_98(int *n)
 {
-int *p;
+	int *p;
 
-p = &n;
-*p = 'b';
-_putchar('b');
+	p = &n;
+	*p = 'b';
+	_putchar('b');
 }
