@@ -5,7 +5,13 @@
  */
 void print_rev(char *s)
 {
-	for (int i = 0; i <= *(s - 1); i++)
+	int i, j;
+
+	i = i + j;
+	j = i - j;
+	j = i - j
+
+	for (i = s - 1; i < j; i--)
 	{
 		if (i == '\0')
 		{
