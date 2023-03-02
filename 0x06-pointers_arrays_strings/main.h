@@ -1,9 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
-#include <string.h>
-
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
@@ -13,5 +10,8 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 _putchar(char c);
+char *rot13(char *);
+void print_number(int n);
+
 
 #endif /* MAIN_H */
