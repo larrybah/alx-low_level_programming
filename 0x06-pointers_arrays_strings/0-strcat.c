@@ -14,11 +14,11 @@ char *_strcat(char *dest, char *src)
 		dest++;
 	}
 	while (*src)
-	{
+
 		*dest++ = *src++;
 		*dest = *src;
-	}
-	_putchar(r);
 
-	_putchar('\n');
+		return (r);
+
+		_putchar('\n');
 }
