@@ -11,13 +11,10 @@ char *_strcat(char *dest, char *src)
 	char *src[];
 	char strcat[];
 
-	while (strcat == '')
-	{
 		if (*dest == '\0')
 		{
 			strcat = *dest + *src;
 			_putchar(strcat);
 		}
-	}
 	_putchar('\n');
 }
