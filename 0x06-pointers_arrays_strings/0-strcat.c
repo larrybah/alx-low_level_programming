@@ -10,11 +10,15 @@ char *_strcat(char *dest, char *src)
 	char *r = dest;
 
 	while (*dest)
+	{
 		dest++;
+	}
 	while (*src)
+	{
 		*dest++ = *src++;
-	*dest = *src;
-	return (r);
+		*dest = *src;
+		return (r);
+	}
 
 	_putchar('\n');
 }
