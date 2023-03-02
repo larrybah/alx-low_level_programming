@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcat - concatinate two strings adn prints the result
+ * _strcat - concatinate two strings adn prints the result
  * @dest: Destination
  * @src: Source
  * Return: Pointer to destination
