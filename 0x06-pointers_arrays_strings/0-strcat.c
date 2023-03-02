@@ -3,22 +3,16 @@
  * *_strcat - concatinate two strings adn prints the result
  * @dest: Destination
  * @src: Source
- * Return: 0 (Success)
+ * Return: Pointer to destination
  */
 char *_strcat(char *dest, char *src)
 {
-	char *strcat = *dest;
+	char *r = dest;
 
 	while (*dest)
-	{
 		dest++;
-	}
-
 	while (*src)
-	{
 		*dest++ = *src++;
-		*dest = *src;
-	}
-
-	return (strcat);
+	*dest = *src;
+	return (r);
 }
