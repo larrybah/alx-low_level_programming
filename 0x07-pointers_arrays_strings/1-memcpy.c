@@ -1,14 +1,20 @@
 #include "main.h"
 /**
- *
- *
- *
+ * _memcpy - copies to memory
+ * @dest: destination
+ * @src: source
+ * @n: length of string
+ * Return: new string
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	for (int i = 0; i < n; i++)
+	unsigned int i = 0;
+
+	while (a < n)
 	{
-		*dest++ = *src; 
+		*(dest + a) = *(src + a);
+		a++;
 	}
+
 	return (dest);
 }
