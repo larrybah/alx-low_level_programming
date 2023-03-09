@@ -1,24 +1,35 @@
 #include "main.h"
 /**
+ * secondprime - makes it possible ot evaluate from 1 to n
+ * @a: same value as n
+ * @b: number thats iterates from 1 ot n
+ * Return: 1 on success and -1 on error
+ */
+int secondprime(int a, int b)
+{
+	if (a == b)
+	{
+		return (1);
+	}
+	else if (a % b == 0)
+	{
+		return (0);
+	}
+	else
+		return (secondprime(a, b + 1));
+}
+
+/**
  * is_prime_number - prints prime numbers
  * @n: parameter
  * Return: Success
  */
 int is_prime_number(int n)
 {
-	int i;
-
-	if (n == i)
+	if (n <= 1)
 	{
-		return (1);
+		return (0);
 	}
 	else
-	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
-		else
-			return (is_prime_number(n, i - 1));
-	}
+		return (secondprime(n, 2));
 }
