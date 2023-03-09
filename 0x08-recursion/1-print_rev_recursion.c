@@ -5,20 +5,9 @@
  */
 void _print_rev_recursion(char *s)
 {
-	int i = 0, j = 0;
-
-	if (*s)
+	if (*s != '\0')
 	{
-		++j;
 		_print_rev_recursion(s + 1);
-	}
-	if (i <= j)
-	{
-		char temp = s[i];
-
-		s[i++] = s[j];
-		s[j--] = temp;
-
 		_putchar(*s);
 	}
 
