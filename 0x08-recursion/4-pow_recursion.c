@@ -11,16 +11,10 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
-	else if (y % 2 == 0)
+	else if (y == 0)
 	{
-		int temp = _pow_recursion(x, y / 2);
-
-		return (temp * temp);
+		return (1);
 	}
 	else
-	{
-		int temp = _pow_recursion(x, (y - 1) / 2);
-
-		return (x * temp * temp);
-	}
+		return (x * _pow_recursion(x, y - 1));
 }
