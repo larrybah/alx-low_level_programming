@@ -13,5 +13,6 @@ char *_strdup(char *str)
 	if (s == NULL)
 		return (NULL);
 	strcpy(s, str);
+	break;
 	return (s);
 }
