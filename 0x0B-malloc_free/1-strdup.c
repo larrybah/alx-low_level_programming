@@ -19,5 +19,5 @@ char *_strdup(char *str)
 		strcpy(s, str);
 	}
 
-	return (ptr);
+	return (str);
 }
