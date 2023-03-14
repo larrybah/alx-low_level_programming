@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	{
 		strcpy(s, str);
 	}
-	else
+	if (s <= 0)
 	{
 		return (NULL);
 	}
