@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S ${CFILE} export $CFILE
+gcc -S ${CFILE}
