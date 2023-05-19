@@ -10,8 +10,12 @@ int main(void)
 	while (numbers <= 57)
 	{
 		putchar(numbers);
-		putchar(',');
-		putchar(' ');
+
+		if (numbers != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		numbers++;
 	}
 	putchar('\n');
