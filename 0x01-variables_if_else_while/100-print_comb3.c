@@ -14,7 +14,7 @@ int main(void)
 
 		while (j <= 9)
 		{
-			if (i != 8 || j != 9)
+			if (!((i == 8 && j >= 0) || (i == 0 && j >= 8)))
 			{
 				putchar('0' + i);
 				putchar('0' + j);
@@ -26,4 +26,6 @@ int main(void)
 		i++;
 	}
 	putchar('\n');
+
+	return (0);
 }
