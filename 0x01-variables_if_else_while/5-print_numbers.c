@@ -9,9 +9,10 @@ int main(void)
 
 	while (number < 10)
 	{
-		printf("%d\n", number);
+		printf("%d", number);
 		number++;
 	}
+	putchar('\n');
 
 	return (0);
 }
