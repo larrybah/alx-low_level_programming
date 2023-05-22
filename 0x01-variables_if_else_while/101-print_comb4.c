@@ -5,21 +5,33 @@
  */
 int main(void)
 {
-	int i, j, k;
+	int i = 0, j, k;
 
-	for (i = 0; i <= 7; i++)
+	while (i <= 7)
 	{
-		for (j = i + 1; j <= 8; j++)
+		j = i + 1;
+
+		while (j <= 8)
 		{
-			for (k = j + 1; k <= 9; k++)
+			k = j + 1;
+
+			while (k <= 9)
 			{
 				putchar(i + '0');
 				putchar(j + '0');
 				putchar(k + '0');
 				putchar(',');
 				putchar(' ');
+
+				k++;
 			}
+
+			j++;
 		}
+
+		i++;
 	}
 	putchar('\n');
+
+	return (0);
 }
