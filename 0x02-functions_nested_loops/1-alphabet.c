@@ -2,7 +2,6 @@
 
 /**
  * print_alphabet - prints lowercase alphabet to stdout
- * @i: character to be printed on stdout.
  */
 void print_alphabet(void)
 {
