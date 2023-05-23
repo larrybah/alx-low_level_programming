@@ -1,6 +1,9 @@
 #include "main.h"
 /**
- * print_sign - prints a plus sign if number is greater and minus sign if its less and zero if its zero.
+ * print_sign - prints a plus sign if number is greater
+ * and minus sign if its less, otherwise zero.
+ * @n: value to check conditions on.
+ * Return: 0 on Success.
  */
 int print_sign(int n)
 {
