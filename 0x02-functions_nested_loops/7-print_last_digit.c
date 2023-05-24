@@ -2,14 +2,13 @@
 
 /**
  * print_last_digit - prints the last digit of a value
- * @r: value to be return
- * Return: value
+ * @i: value to be return
+ * Return: value on Success
  */
 int print_last_digit(int i)
 {
-	if (i % 10 == 0)
-	{
-		return (i);
-	}
-	return (i);
+	int last_digit = 0;
+
+	last_digit = i % 10;
+	return (last_digit);
 }
