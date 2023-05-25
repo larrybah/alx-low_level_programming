@@ -1,10 +1,6 @@
 #include "main.h"
-#include <math.h>
 /**
- * main - checks for the largest prime factor for the value number 
- * @number: value to check from
- * @i: iterable value
- * @largest_factor: largest prime factor
+ * main - checks for the largest prime factor for the value number
  * Return: 0 on Success
  */
 
@@ -20,7 +16,7 @@ int main(void)
 		number /= 2;
 	}
 
-	for (i = 3; i <= sqrt(number); i+=2)
+	for (i = 3; i <= sqrt(number); i += 2)
 	{
 		while (number % i == 0)
 		{
