@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+int _putchar(char c);
 void print_square(int size);
 void print_diagonal(int n);
 void print_line(int n);
@@ -14,5 +15,6 @@ void print_numbers(void);
 int mul(int a, int b);
 int _isdigit(int c);
 int _isupper(int c);
+void print_number(int n);
 
 #endif
