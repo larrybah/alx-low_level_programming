@@ -6,13 +6,23 @@
  */
 void reverse_array(int *a, int n)
 {
-	int *ptr = &a[n - 1];
+	int temp, start, end;
 
-	while (n < *ptr)
+	start = 0;
+	end = n - 1;
+
+	while (start < end)
 	{
-		n++;
-		ptr--;
+		temp = a[start];
+		a[start] = a[end];
+		a[end] = temp;
 
+		start++;
+		end--;
 	}
-	printf("\n");
+
+	for (; temp < n; temp++)
+	{
+		_putchar(a[temp]);
+	}
 }
