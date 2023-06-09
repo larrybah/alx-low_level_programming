@@ -9,14 +9,10 @@ int main(int argc, char* argv[])
 {
 	int i, j, sum = 0;
 
-	if (argc == atoi(argv[0]))
-	{
-		printf("0\n");
-	}
-	else if (argc == ' ')
+	if (argc < 3)
 	{
 		printf("Error\n");
-		return (1);
+		return (0);
 	}
 
 	i = atoi(argv[1]);
