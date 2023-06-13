@@ -6,7 +6,7 @@
  */
 char *_strdup(char *str)
 {
-	int len = strlen(str + 1);
+	int len = strlen(str);
 	char *dup;
 
 	if (str == NULL)
