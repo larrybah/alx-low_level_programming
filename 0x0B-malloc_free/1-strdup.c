@@ -6,19 +6,22 @@
  */
 char *_strdup(char *str)
 {
-	int len;
-	char *duplicate;
+	int len = 0;
+	char *dup;
 
-	len = strlen(str) + 1;
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
-	duplicate = malloc(len);
+	dup = malloc(sizeof(char) * (len + 1));
 
 	if (dup == NULL)
 	{
 		return (NULL);
 	}
 
-	memcpy(dup, str, len);
+	strcpy(dup, str);
 
 	return (dup);
 }
