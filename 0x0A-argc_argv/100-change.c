@@ -5,10 +5,11 @@
  * @argv: array of arguments
  * Return: 0 Always
  */
+
+int calculate_minimum_coins(int cents);
 int main(int argc, char* argv[])
 {
-	int i, cents, num_coins = 0;
-	int coins[] = {25, 10, 5, 2, 1};
+	int cents, min_coins;
 
 	if (argc != 2)
 	{
@@ -17,13 +18,35 @@ int main(int argc, char* argv[])
 	}
 
 	cents = atoi(argv[1]);
-
-	for (i = 0; i < sizeof(coins) / sizeof(coins[0]); i++)
+	if (cents < 0)
 	{
-		num_coins += cents / coins[i];
-		cents %= coins[i];
+		printf("0\n");
+	}
+	else
+	{
+		min_coins = calculate_minimum_coins(cents);
+		printf("%d\n", min_coins);
 	}
 
-	printf("%d\n", num_coins);
 	return (0);
+}
+
+/**
+ * calculate_minimum_coins - calculates minimum coins
+ * @cents: cents the amount of money
+ *
+ */
+int calculate_minimum_coins(int cents)
+{
+	int i, coins = 0;
+	int denomination[] = {25, 10, 5, 2, 1};
+	int num_denomination = sizeof(denomination) / sizeof(denomination[0]);
+
+	for (i = 0; i < num_denomination; i++)
+	{
+		coins += (cents / denomination[i]);
+		cents %= denomination[i];
+	}
+
+	return (coins);
 }
