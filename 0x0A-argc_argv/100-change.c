@@ -1,13 +1,11 @@
 #include "main.h"
 /**
  * main - prints minimum number of change
- * @argc: number of arguments
- * @argv: array of arguments
+ * @cents: change to give
  * Return: 0 Always
  */
-
 int calculate_minimum_coins(int cents);
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int cents, min_coins;
 
@@ -33,8 +31,8 @@ int main(int argc, char* argv[])
 
 /**
  * calculate_minimum_coins - calculates minimum coins
- * @cents: cents the amount of money
- *
+ * @cents: the amount of money
+ * Return: coins change
  */
 int calculate_minimum_coins(int cents)
 {
