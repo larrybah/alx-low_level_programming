@@ -6,10 +6,10 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *ptr;
+	unsigned int *ptr;
 	int exit_status = 98;
 
-	ptr = malloc(sizeof(char) * b);
+	ptr = malloc(sizeof(int) * b);
 
 	if (ptr == NULL)
 	{
