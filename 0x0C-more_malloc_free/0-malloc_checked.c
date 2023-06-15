@@ -7,13 +7,12 @@
 void *malloc_checked(unsigned int b)
 {
 	unsigned int *ptr;
-	int exit_status = 98;
 
 	ptr = malloc(sizeof(int) * b);
 
 	if (ptr == NULL)
 	{
-		exit(exit_status);
+		exit(EXIT_FAILURE);
 	}
 	else
 		return (ptr);
