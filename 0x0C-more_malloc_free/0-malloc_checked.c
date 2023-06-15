@@ -15,4 +15,6 @@ void *malloc_checked(unsigned int b)
 	{
 		exit(exit_status);
 	}
+	else
+		return (ptr);
 }
