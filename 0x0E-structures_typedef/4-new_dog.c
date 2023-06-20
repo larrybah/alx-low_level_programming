@@ -18,8 +18,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	new_dog_ptr->name = name;
-	new_dog_ptr->age = age;
 	new_dog_ptr->owner = owner;
+	new_dog_ptr->age = age;
 
 	return (new_dog_ptr);
 }
