@@ -8,11 +8,18 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	new_dog = (char *)malloc(sizeof(char));
+	dog_t *new_dog_ptr;
 
-	new_dog->name = name;
-	new_dog->owner = owner;
+	new_dog_ptr = (dog_t *)malloc(sizeof(dog_t));
 
-	if (new_dog == NULL)
+	if (new_dog_ptr == NULL)
+	{
 		return (NULL);
+	}
+
+	new_dog_ptr->name = name;
+	new_dog_ptr->age = age;
+	new_dog_ptr->owner = owner;
+
+	return (new_dog_ptr);
 }
