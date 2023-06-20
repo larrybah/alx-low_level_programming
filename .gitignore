@@ -3,5 +3,3 @@ a.out
 *.swo
 *.swp
 *.~
-_putchar.c
-main.c
