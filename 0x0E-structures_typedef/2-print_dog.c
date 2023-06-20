@@ -1,12 +1,13 @@
 #include "dog.h"
 /**
  * print_dog - prints the elements of dog
+ * @d: pointer to dog structure
  */
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		printf("nil\n");
+		return;
 	}
 	else
 	{
