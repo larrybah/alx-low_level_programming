@@ -45,7 +45,8 @@ void print_all(const char *format, ...)
 			}
 		}
 		format++;
-		if (*format && (*format == 'c' || *format == 'i' || *format == 'f' || *format == 's'))
+		if (*format && (*format == 'c' || *format == 'i'
+					|| *format == 'f' || *format == 's'))
 			printf(", ");
 	}
 	va_end(args);
