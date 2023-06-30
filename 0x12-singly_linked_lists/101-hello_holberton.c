@@ -1,8 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - prints holberton with Nasm
+ */
 extern void hello_holberton();
 
-int main(void)
+int main()
 {
 	hello_holberton();
 	printf("\n");
