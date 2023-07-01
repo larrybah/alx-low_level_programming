@@ -21,7 +21,7 @@ size_t print_list(const list_t *h)
 		{
 			len = 0;
 		}
-		else 
+		else
 		{
 			len = strlen(h->str);
 		}
