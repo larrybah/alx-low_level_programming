@@ -6,22 +6,31 @@
  */
 int main(void)
 {
-	int i, num1, num2, fib = 50;
-
+	unsigned long int num1, num2, fib;
+	unsigned long int i, number;
+	
+	number = 50;
 	num1 = 1;
-	num1 = 2;
+	num2 = 2;
 
-	for (i = 1; i <= fib; i++)
+	printf("%lu, %lu, ", num1, num2);
+
+	for (i  = 2; i < number; i++)
 	{
-		printf("%d", num2);
+		fib = num1 + num2;
+
+		printf("%lu", fib);
 		num1 = num2;
-		num2 = num1 + num2;
+		num2 = fib;
 
 		if (!(i == fib))
 		{
 			printf(", ");
 		}
+		/*num1 = num2;
+		num2 = fib;*/
 	}
+	printf("\n");
 	return (0);
 
 }
