@@ -24,6 +24,6 @@ void print_diagsums(int *a, int size)
 			}
 		}
 	}
-	printf("%d\n", mainDiagonalSum);
-	printf("%d\n", antiDiagonalSum);
+	printf("%d, ", mainDiagonalSum);
+	printf("%d, ", antiDiagonalSum);
 }
