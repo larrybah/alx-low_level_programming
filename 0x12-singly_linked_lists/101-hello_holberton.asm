@@ -1,13 +1,17 @@
-section .data
-	hello db "Hello, Holberton", 0
-	newline db 10, 0
-
 section .text
-	extern printf
+global main
 
-global hello_holberton
+main:
+	mov rax, 1
+	mov rdi, 1
+	mov rsi, msg
+	mov rdx, msglen
+	syscall
 
-hello_holberton:
-	mov rdi, hello
-	call printf
-	ret
+	mov rax, 60
+	mov rdi, 0
+	syscall
+
+section .rodata
+	msg: db "Hello, Holberton", 10
+	msglen: equ $ - msg
