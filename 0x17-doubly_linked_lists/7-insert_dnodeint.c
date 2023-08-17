@@ -26,7 +26,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			(*h)->prev = new_node;
 		}
 		*h = new_node;
-		return (*h);
+		return (NULL);
 	}
 
 	current = *h;
@@ -42,7 +42,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		printf("Out of bounds\n");
 		free(new_node);
-		exit(0);
+		return (NULL);
 	}
 
 	new_node->prev = current;
