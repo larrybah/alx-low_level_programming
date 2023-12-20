@@ -1,26 +1,23 @@
 #include "main.h"
 /**
- * _strpbrk - search for string and finds a matching character
- * @s: pointer pointin to the string you want to search
- * @accept: a pointer holding the address to the characters to be check for.
- * Return: index in found.
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
 {
-	while (*s != '\0')
-	{
-		char *ptr;
+		int k;
 
-		ptr = accept;
-		while (*ptr != '\0')
+		while (*s)
 		{
-			if (*s == *ptr)
+			for (k = 0; accept[k]; k++)
 			{
-				return (s);
+			if (*s == accept[k])
+			return (s);
 			}
-			ptr++;
-		}
 		s++;
-	}
-	return (NULL);
+		}
+
+	return ('\0');
 }
