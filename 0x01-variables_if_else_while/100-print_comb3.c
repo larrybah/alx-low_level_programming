@@ -5,25 +5,11 @@
  */
 int main(void)
 {
-	int i = 0;
-	int j;
+	char c;
 
-	while (i <= 8)
+	for (c = 'z'; c >= 'a'; c--)
 	{
-		j = i + 1;
-
-		while (j <= 9)
-		{
-			if (!((i == 8 && j >= 0) || (i == 0 && j >= 8)))
-			{
-				putchar('0' + i);
-				putchar('0' + j);
-				putchar(',');
-				putchar(' ');
-			}
-			j++;
-		}
-		i++;
+		putchar(c);
 	}
 	putchar('\n');
 
