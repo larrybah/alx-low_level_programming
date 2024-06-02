@@ -3,4 +3,4 @@
 ## General
 
 * Why C programming is awesome
-* Who invented C
+* The repository contain files from the project at alx.
