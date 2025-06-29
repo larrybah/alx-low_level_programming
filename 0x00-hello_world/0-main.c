@@ -7,7 +7,5 @@
  */
 int main(void)
 {
-	printf("A Fresh start!\n");
-
 	return (0);
 }
